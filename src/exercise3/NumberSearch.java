@@ -5,22 +5,21 @@ import java.util.Scanner;
 public class NumberSearch {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int counter = 0;
+    
+        int count = 0;
         for (int i = 100; i <= 1000; i++) {
-          if (counter < 9 ) {
         if (i % 5 == 0 && i % 6 == 0) {
-          System.out.print(i + " ");
-          counter++;
+          count++;
         }
-          } else {
-          if (i % 5 == 0 && i % 6 == 0) {
-            System.out.println(i);
+        if (count % 10 == 0) {
+          System.out.println(i);
+        } else { 
+            System.out.println(i + " ");
 
-            counter = 0;
+            count = 0;
           }
           }
     }
-    }
+}    
 
-}
+
