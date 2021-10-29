@@ -15,10 +15,8 @@ public class NumberSearch {
         }
           } else {
           if (i % 5 == 0 && i % 6 == 0) {
-<<<<<<< HEAD
             System.out.println(i);
-=======
->>>>>>> ac63b090a81e89a60f9dc17d6138a1f06ff2e727
+
             counter = 0;
           }
           }

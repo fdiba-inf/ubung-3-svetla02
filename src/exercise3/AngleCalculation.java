@@ -1,6 +1,7 @@
 package exercise3;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class AngleCalculation {
 
@@ -10,19 +11,18 @@ public class AngleCalculation {
        char ch = input.next().charAt(0);
        double Radiant;
        double Grad;
+       double Pi = Math.PI;
        do {
          if (ch == 'r') {
-           Radiant = (winkel * 3.14) / 180;
+           Radiant = (winkel * Pi) / 180;
            System.out.println("Angle: " + Radiant + ch);
          } else {
-           Grad = (winkel * 180) / 3.14;
+           Grad = (winkel * 180) / Pi;
            System.out.println("Angle: " + Grad + ch);
          }
          ch = input.next().charAt(0);
-<<<<<<< HEAD
-         
-=======
->>>>>>> ac63b090a81e89a60f9dc17d6138a1f06ff2e727
+
+
        } while((ch == 'r') || (ch == 'd'));
        
        
