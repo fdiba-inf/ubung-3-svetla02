@@ -19,7 +19,10 @@ public class AngleCalculation {
            System.out.println("Angle: " + Grad + ch);
          }
          ch = input.next().charAt(0);
+<<<<<<< HEAD
          
+=======
+>>>>>>> ac63b090a81e89a60f9dc17d6138a1f06ff2e727
        } while((ch == 'r') || (ch == 'd'));
        
        
