@@ -9,8 +9,7 @@ public class AngleCalculation {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter angle: ");
-       char ch = input.next().charAt(0);
-       double Pi = Math.PI;
+       char ch;
        double angle;
        do {
          angle = input.nextDouble();
@@ -18,11 +17,11 @@ public class AngleCalculation {
          if(ch == 'r') {
            double conangle = angle / Math.PI * 180;
            System.out.println("Angle: " + conangle + ch);
-         } else {
+         } else if (ch == 'd'){
            double conangle = angle * Math.PI / 180;
            System.out.println("Angle: " + conangle+ ch);
          }
-         ch = input.next().charAt(0);
+         
 
 
        } while((ch == 'r') || (ch == 'd'));
