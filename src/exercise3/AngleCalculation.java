@@ -13,8 +13,8 @@ public class AngleCalculation {
        double Grad;
        double Pi = Math.PI;
        do {
-         if (ch == 'r') {
-           Radiant = (winkel * Pi) / 180;
+         if(ch == 'r') {
+           Radiant = (winkel*Pi) / 180;
            System.out.println("Angle: " + Radiant + ch);
          } else {
            Grad = (winkel * 180) / Pi;
